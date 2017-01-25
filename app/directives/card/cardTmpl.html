@@ -1,0 +1,19 @@
+<div  class="card" ng-hide="card.flipped" ng-click="flip({card: card})">
+  {{card.num}}
+  <div ng-repeat="suit in suits track by $index">
+    {{suit}}
+  </div>
+  <div class="" ng-show="card.num === 'K'">
+    <img src="https://s-media-cache-ak0.pinimg.com/originals/da/94/16/da941602cfdbda5aea9011038f7b36df.jpg" alt="">
+  </div>
+  <div class="" ng-show="card.num === 'Q'">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Poker-sm-243-Qc.png" alt="">
+  </div>
+  <div class="" ng-show="card.num === 'J'">
+    <img src="http://qb9.biz/wp-content/uploads/deck_of_cards_jack_28853_1157_1600.jpg" alt="">
+  </div>
+  {{card.num}}
+</div>
+<div  class="card" ng-show="card.flipped" ng-click="flip({card: card})">
+  <img src="http://media-hearth.cursecdn.com/attachments/39/677/cardback_13.png" alt="">
+</div>

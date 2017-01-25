@@ -1,0 +1,8 @@
+img {
+  height: 100px;
+  width: 50px;
+}
+
+.card {
+  transition: all 3s;
+}
